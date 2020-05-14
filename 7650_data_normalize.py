@@ -7,8 +7,8 @@ arr = np.array(data)
 
 
 print('\n ========= min-max ===========\n')
-# default: min = 0, max = 1
-min, max = 0, 100
+# set min, max
+min, max = 0, 1
 for x in arr:
   x = float(x - np.min(arr))/(np.max(arr)- np.min(arr))
   print(x *(max - min)+ min)
@@ -19,5 +19,3 @@ for x in arr:
   x = float(x - arr.mean())/arr.std()
   print(x)
 
-
-print('\n\n\n ========= decimal scaling ===========\n')
