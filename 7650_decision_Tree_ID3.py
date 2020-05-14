@@ -75,9 +75,9 @@ def createTree(dataSet, labels):
     if classList.count(classList[0]) == len(classList):
         # classList所有元素都相等，即类别完全相同，停止划分
         return classList[0]                                  #splitDataSet(dataSet, 0, 0)此时全是N，返回N
-    if len(dataSet[0]) == 1:                                 #[0, 0, 0, 0, 'N'] 
-        # 遍历完所有特征时返回出现次数最多的
-        return majorityCnt(classList)
+    # if len(dataSet[0]) == 1:                                 #[0, 0, 0, 0, 'N'] 
+    #     # 遍历完所有特征时返回出现次数最多的
+    #     return majorityCnt(classList)
     bestFeat = chooseBestFeatureToSplit(dataSet)             #0－> 2   
         # 选择最大的gain ratio对应的feature
     bestFeatLabel = labels[bestFeat]                         #outlook -> windy     
