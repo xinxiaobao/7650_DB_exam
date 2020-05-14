@@ -1,5 +1,3 @@
-# https://www.jianshu.com/p/479e92cf4c2c
-
 import math
 import operator
 import treePlotter
