@@ -19,3 +19,6 @@ for x in arr:
   x = float(x - arr.mean())/arr.std()
   print(x)
 
+print('\n\n\n ========= statistics ===========\n')
+print('median:',np.median(arr))
+print('varience:', np.var(arr))
