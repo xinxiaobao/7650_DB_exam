@@ -21,4 +21,4 @@ for x in arr:
 
 print('\n\n\n ========= statistics ===========\n')
 print('median:',np.median(arr))
-print('varience:', np.var(arr))
+print('variance:', np.var(arr))
