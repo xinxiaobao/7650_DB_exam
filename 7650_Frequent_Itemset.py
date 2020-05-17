@@ -2,7 +2,7 @@
 from pymining import itemmining, assocrules
 
 # set parameters
-min_sup = 3
+min_sup = 4
 min_conf = 0.6
 
 # input data

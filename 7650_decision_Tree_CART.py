@@ -6,28 +6,28 @@ import matplotlib.pyplot as plt
 print('\n\n ============ CART ============\n\n')
 
 def createDataSet():
-    # dataSet = [[0, 1, 0, 'Y'], 
-    #            [1, 1, 1, 'Y'], 
-    #            [1, 0, 1, 'Y'], 
-    #            [1, 0, 1, 'Y'], 
-    #            [0, 0, 0, 'N'], 
-    #            [0, 0, 0, 'N'], 
-    #            [0, 0, 0, 'N'],
-    #            [1, 0, 0, 'N']]
-    # labels = ['Race', 'Income', 'Child']
-    dataSet = []
-    for i in range(5):
-        dataSet.append([1, 1, 1, 'Y'])
-        dataSet.append([0, 0, 1, 'N'])
+    dataSet = [[0, 1, 1, 0, 'N'], 
+               [0, 1, 0, 0, 'N'], 
+               [0, 1, 1, 1, 'Y'], 
+               [1, 0, 0, 0, 'Y'], 
+               [1, 1, 0, 1, 'Y'], 
+               [1, 0, 1, 0, 'Y'], 
+               [1, 1, 1, 1, 'Y'],
+               [0, 0, 1, 1,  'Y']]
+    labels = ['Is-Fever', 'Tired', 'Cough', 'Short']
+    # dataSet = []
+    # for i in range(5):
+    #     dataSet.append([1, 1, 1, 'Y'])
+    #     dataSet.append([0, 0, 1, 'N'])
 
-    for i in range(20):
-        dataSet.append([0, 1, 1, 'N'])
-        dataSet.append([1, 0, 1, 'Y'])
+    # for i in range(20):
+    #     dataSet.append([0, 1, 1, 'N'])
+    #     dataSet.append([1, 0, 1, 'Y'])
 
-    for i in range(25):
-        dataSet.append([0, 1, 0, 'Y'])
-        dataSet.append([0, 0, 0, 'N'])
-    labels = ['X', 'Y', 'Z']
+    # for i in range(25):
+    #     dataSet.append([0, 1, 0, 'Y'])
+    #     dataSet.append([0, 0, 0, 'N'])
+    # labels = ['X', 'Y', 'Z']
     return dataSet, labels
 
 def calcGINI(dataSet):
